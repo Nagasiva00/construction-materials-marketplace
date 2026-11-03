@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Construction Materials Marketplace</title>
+  <link rel="stylesheet" href="index.css">
+  <div class="logo"></div>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Construction Materials Marketplace</h1> 
+  <p>Choose your industry & buy materials</p>
+  <!-- <div class="logo"></div> -->
+ </header> 
+
+<div class="container">
+
+  <div class="search-box">
+    <input type="text" id="search" placeholder="Search industry like bricks, cement, steel..." onkeyup="searchIndustry()">
+  </div>
+
+  <div class="grid" id="industryList">
+
+    <div class="card">
+      <h3>Bricks Industry</h3>
+      <p>Red clay bricks, Fly ash bricks available</p>
+      <!-- <ol>
+        <li>Ram Bricks</li>
+        <li>Sita Company</li> -->
+        <!-- <li>Laxman Bricks Industry</li> -->
+      <!-- </ol> -->
+      <p>Price starts from ₹6 per brick</p>
+    <!-- <button class="button"> -->
+  <!-- <a href="bricks.html" style="color:white; text-decoration:none;">
+    View Details
+  </a> -->
+  <!-- <a href="./bricks.html">
+  <button class="button">View Details</button>
+</a> -->
+<a href="bricks.html" class="button">view Details</a>
+<!-- <p>The bricks industry plays a major role in the construction sector. Bricks are widely used for building houses, schools, hospitals, commercial buildings, and compound walls. Because of their strength, durability, and low cost, bricks are one of the oldest and most commonly used construction materials.</p> -->
+<!-- </button> -->
+
+    </div>
+<script>
+
+function showBricks(){
+  alert(
+    "Bricks Industries List:\n\n" +
+    "1. Ram Bricks\n" +
+    "2. Sita Company\n" +
+    "3. Laxman Bricks Industry\n" +
+    "4. Sri Lakshmi Bricks\n" +
+    "5. Golden Fly Ash Bricks"
+  );
+}
+
+</script>
+
+
+    <div class="card">
+      <h3>Cement Industry</h3>
+      <p>Ultratech, ACC, Ambuja cement</p>
+      <p>Price starts from ₹370 per bag</p>
+      <button class="button" onclick="show('Cement Industry')">View Details</button>
+
+    </div>
+
+    <script>
+
+     function showBricks(){ alert(
+    "Bricks Industries List:\n\n" +
+    "1. Ram Cement\n" +
+    "2. Sita Iron\n" +
+    "3. Laxman sand\n" +
+    "4. Sri Lakshmi Bricks\n" +
+    "5. Golden Fly Ash Bricks"
+       );
+     }
+    </script>
+    <div class="card">
+      <h3>Steel Industry</h3>
+      <p>TMT bars & rods</p>
+      <p>Price starts from ₹50/kg</p>
+      <button class="button" onclick="show('Steel Industry')">View Details</button>
+    </div>
+
+    <div class="card">
+      <h3>Sand Suppliers</h3>
+      <p>River sand & M-sand</p>
+      <p>Transport available</p>
+      <button class="button" onclick="show('Sand Suppliers')">View Details</button>
+    </div>
+
+    <div class="card">
+      <h3>Tiles & Marble</h3>
+      <p>Floor tiles, wall tiles & granite</p>
+      <p>Wholesale prices available</p>
+      <button class="button" onclick="show('Tiles & Marble')">View Details</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
